@@ -26,7 +26,7 @@ class Clock extends React.Component {
     return (
       <div className="">
         <button className="btn btn-primary" onClick={this.handleClick}>{!this.props.clockState? "Show Clock" : "Hide Clock"}</button>
-        {this.props.clockState? (<p>The time is {this.state.time}</p>) : ""}
+        {this.props.clockState? (<p>{this.state.time}</p>) : ""}
       </div>
     );
   }
